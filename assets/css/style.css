@@ -6,6 +6,8 @@
     --darkest-purple: #291f33;
     --tan: #b1a296;
     --twitch-purple: #6441a4;
+    --divider-gray: rgb(110, 110, 110);
+    --past-gray:  #99979c;
 }
 
 ::selection {
@@ -39,13 +41,13 @@ body {
     align-items: center;        
     margin-right: auto;
     margin-left: auto;
-    border-top: 2px solid rgb(110, 110, 110);
-    border-left: 2px solid rgb(110, 110, 110);
-    border-right: 2px solid rgb(110, 110, 110);
+    border-top: 2px solid var(--divider-gray);
+    border-left: 2px solid var(--divider-gray);
+    border-right: 2px solid var(--divider-gray);
 }
 
 .input-row:hover {
-    background-color: #99979c;
+    background-color: var(--past-gray);
 }
 
 .top-row {
@@ -55,7 +57,7 @@ body {
 }
 
 .bottom-row {
-    border-bottom: 2px solid rgb(110, 110, 110);
+    border-bottom: 2px solid var(--divider-gray);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-bottom: 1.25rem;
@@ -109,12 +111,24 @@ span:hover {
     font-size: 20px;
     left: 50px;
     border: none;
-    border-top: 2px solid rgb(110, 110, 110);
-    border-bottom: 2px solid rgb(110, 110, 110);
+    border-top: 2px solid var(--divider-gray);
+    border-bottom: 2px solid var(--divider-gray);
 }
 
 .delete:hover {
     background-color: var(--twitch-purple);
+}
+
+.past {
+    background-color: var(--past-gray);
+}
+
+.present {
+    background-color: var(--twitch-purple);
+}
+
+.future {
+    background-color: var(--dark-gray);
 }
 
 @media screen and (max-width: 991px) {
