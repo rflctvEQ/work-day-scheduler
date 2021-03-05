@@ -119,16 +119,12 @@ span:hover {
     background-color: var(--twitch-purple);
 }
 
-.past {
-    background-color: var(--past-gray);
+.not-present {
+    background-color: var(--dark-gray);
 }
 
 .present {
     background-color: var(--twitch-purple);
-}
-
-.future {
-    background-color: var(--dark-gray);
 }
 
 @media screen and (max-width: 991px) {

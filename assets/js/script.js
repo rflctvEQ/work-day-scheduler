@@ -43,20 +43,14 @@ function timeStyle() {
     for (let i=9; i<18; i++) {
         let timeComp = $("#" + i);
         
-        if (i < currentHour) {
-            // should make this class past 
-            timeComp.removeClass("future");
-            timeComp.removeClass("present");
-            timeComp.addClass("past");
-        } else if (i == currentHour) {
+        if (i == currentHour) {
             // should make this class current
-            timeComp.removeClass("past");
-            timeComp.removeClass("future")
+            timeComp.removeClass("not-presen");
             timeComp.addClass("present");
         } else {
-            timeComp.removeClass("past");
-            timeComp.removeClass("present");
-            timeComp.addClass("future");
+            // should make this class not-current
+            timeComp.removeClass("presen");
+            timeComp.addClass("not-present");
         };
     };
      
