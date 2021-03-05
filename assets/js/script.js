@@ -49,7 +49,7 @@ function timeStyle() {
             timeComp.addClass("present");
         } else {
             // should make this class not-current
-            timeComp.removeClass("presen");
+            timeComp.removeClass("present");
             timeComp.addClass("not-present");
         };
     };
