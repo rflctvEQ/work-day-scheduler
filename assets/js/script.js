@@ -36,7 +36,7 @@ for (let i=9; i<18; i++) {
     };
 }; 
 
-// compares current time to div id and adds the time-appropriate styling to those divs 
+// compares current time to div id and adds the time-appropriate styling to those divs
 function timeStyle() {
     let currentHour = moment().hours();
 
